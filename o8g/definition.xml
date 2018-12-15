@@ -166,7 +166,7 @@
 			<groupaction menu="Orthagonal on front side. Flip for diagonal." default="False" execute="" />
 			<groupseparator />
 			<groupaction menu="Long Path" default="False" execute="placeLongPath" />
-			<groupaction menu="Medium Path" default="False" execute="placeMediumPath" />
+			<groupaction menu="Medium Path" default="False" execute="placeMediumPath" shortcut="ctrl+c" />
 			<groupaction menu="Short Path" default="False" execute="placeShortPath" />
 			<groupseparator />
 			<groupaction menu="Elbow Path" default="False" execute="placeElbowPath" />
@@ -176,7 +176,7 @@
 			<groupaction menu="Orthagonal to Diagonal Connection Path" default="False" execute="placeDiagonalConnectionPath" />
 			<groupaction menu="Directional Marker" default="False" execute="placeDirectionalMarker" />
 			<groupseparator />
-			<groupaction menu="Lock all paths" default="False" execute="lockAllPaths" />
+			<groupaction menu="Lock all paths" default="False" execute="lockAllPaths" shortcut="ctrl+shift+c" />
 			<groupaction menu="Unlock all paths" default="False" execute="unlockAllPaths" />
 		</groupactions>
 		<groupactions menu="Random">
