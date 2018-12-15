@@ -455,8 +455,10 @@ def deckLoaded(args):
     if isShared:
         notify("{} Takes control of the encounter deck".format(me))
         for p in shared.piles:
+            notify("DEBUG: modifying shared pile {}".format(p))
             if shared.piles[p].controller != me:
                 shared.piles[p].controller = me
+                notify("DEBUG: {} Takes control of {}".format(me, p))
         #rnd(1,2) # This causes OCTGN to sync the controller changes!
         update()
             
