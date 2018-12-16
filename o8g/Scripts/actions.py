@@ -908,6 +908,9 @@ def doUpkeepPhase(setPhaseVar = True):
     for card in table:
         if card.Type == "Investigator" and card.controller == me and not isLocked(card) and card.isFaceUp:
             addResource(card)
+            if card.name == "Jenny Barnes":
+                # TODO: support Sacrificial Beast cancelhttps://arkhamdb.com/card/98003
+                addResource(card)
         elif card.Type == "Mini" and card.controller == me:
             card.markers[Action] = 0
             if card.alternates is not None and "" in card.alternates:
